@@ -1,4 +1,4 @@
-## Why AWS?
+# Why AWS?
 I chose Amazon Web Services (AWS) as the primary cloud provider for this project due to its industry-leading reliability, extensive service ecosystem, and granular infrastructure control.
 
 Extensive Service Ecosystem: Provides access to over 200 fully featured services, enabling seamless integration across compute, storage, databases, and networking.
@@ -13,8 +13,8 @@ Flexible Cost Management: Offers scalable pay-as-you-go pricing models alongside
 
 AWS also has so much resources avaliable to easily learn from and an easy community to find.
 
-## Screenshots
-  Screenshot of billing Dashboard with free tier alerts
+# Screenshots
+ ## Screenshot of billing Dashboard with free tier alerts
   ![](./images/Screenshot%20(79).png)
   ![](./images/Screenshot%20(81).png)
   ![](./images/Screenshot%20(82).png)
