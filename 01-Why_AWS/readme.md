@@ -15,3 +15,6 @@ AWS also has so much resources avaliable to easily learn from and an easy commun
 
 ## Screenshots
   Screenshot of billing Dashboard with free tier alerts
+  ![](./images/Screenshot%20(79).png)
+  ![](./images/Screenshot%20(81).png)
+  ![](./images/Screenshot%20(82).png)
