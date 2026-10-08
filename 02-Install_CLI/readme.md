@@ -33,10 +33,10 @@ aws s3 ls
 
 ## What I Learned
 Short notes on why root should be locked down and why IAM users plus MFA are best practice.
-- if root is hackced, attacker controls everything
+- if root is hackced, attacker controls everything.
 - If shared, you cannot tell WHO used root and what they did. No trail.
 - Root has the ability to bypass all securities, with this power in a wrong hands, huge damages will occur.
 
 ### IAM User
-- IAM alone can be hacked and details stolen via phishing, keylogger, reuse and brute force
+- IAM alone can be hacked and details stolen via phishing, keylogger, reuse and brute force.
 - MFA adds a second wall that even if access password and user was given to a strange body without the third party (google authenticator) access is not given.
