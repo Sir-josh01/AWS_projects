@@ -1,0 +1,30 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:StopInstances"
+            ],
+            "Resource": [
+                "arn:aws:resource-groups:*:206238482722:group/*",
+                "arn:aws:license-manager:*:206238482722:license-configuration:*",
+                "arn:aws:ec2:*:206238482722:instance/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceTypes",
+                "ec2:DescribeInstanceEventNotificationAttributes",
+                "ec2:DescribeInstanceStatus"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
