@@ -1,10 +1,55 @@
-Launch a t3.micro EC2 instance using Amazon Linux 2023 AMI
-Create a new key pair, download and secure the .pem file (chmod 400 on Mac/Linux)
-Configure the security group to allow SSH (22) from your IP only, and HTTP (80) from anywhere
-Connect via SSH from your terminal
-Manually install and start Apache (httpd) or Nginx, create a custom index.html with your name
-Confirm the page loads via the instance's public IP in a browser
-Stop the instance, note the public IP changes on restart — discuss why (dynamic vs static IPs, foreshadowing Elastic IP)
-Terminate the instance to avoid ongoing charges
+# Project 04: Launching and Configuring an EC2 Web Server
 
-Screenshot of your custom webpage loading in a browser via the EC2 public IP.
+## Objective
+Launch an EC2 instance, connect with SSH, and host a simple web page.
+
+## 1. Instance Setup
+- AMI: Amazon Linux 2023
+- Type: t3.micro
+- Key pair: my-key (.pem, permissions set with chmod 400)
+
+## 2. Security Group Rules
+| Type | Port | Source |
+|------|------|--------|
+| SSH  | 22   | My IP  |
+| HTTP | 80   | Anywhere |
+
+## 3. SSH Connection
+![SSH connected](./images/Screenshot%20(100).png)
+![SSH connected](./images/Screenshot%20(94).png)
+
+
+## 4. Web Server Installation
+```bash
+sudo dnf install -y httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+```
+![SSH connected](./images/Screenshot%20(95).png)
+![SSH connected](./images/Screenshot%20(96).png)
+
+## 5. Custom Web Page
+![Web page](./images/Screenshot%20(99).png)
+
+## 6. Stop and Restart: IP Change
+Old IP vs new IP, and why it changed (dynamic vs static IP, Elastic IP).
+When you launch a standard EC2 instance, AWS assigns it a dynamic public IP address from its shared pool of IPv4 addresses.
+
+When you stop an instance, AWS releases that public IP address back into the general AWS pool so another customer can use it. When you start (fire up) the instance again, AWS assigns it a brand-new public IP address from the available pool.
+
+Here is why AWS does this:
+
+IPv4 Scarcity & Cost: Public IPv4 addresses are limited and expensive. AWS avoids holding an IP reserved for an inactive, stopped server.
+
+Pool Efficiency: Holding onto public IPs for stopped instances would waste address space across millions of servers.
+
+
+![Web page](./images/Screenshot%20(99).png)
+![Web page](./images/Screenshot%20(101).png)
+
+
+## 7. Clean Up
+Instance terminated to avoid charges.
+
+## What I Learned
+-
