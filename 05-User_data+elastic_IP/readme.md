@@ -1,11 +1,28 @@
-EC2 Automation, Elastic IPs & Auto Scaling Basics
+# Project 05: EC2 Automation, Elastic IPs and AMIs
 
-Launch a new t3.micro instance with a User Data script that installs and starts a web server AND writes a custom HTML page automatically
-Verify the site is live WITHOUT ever SSHing in
-Allocate an Elastic IP and associate it with the running instance
-Stop and start the instance, confirm the Elastic IP persists and the site is still reachable at the same address
-Create an AMI from this instance named 'web-server-baseline-v1'
-Launch a second instance from your custom AMI and confirm it comes up pre-configured
-Release the Elastic IP and terminate both instances when done (avoid idle-IP charges)
+## Objective
+Automate a web server with User Data, use an Elastic IP, and launch an instance from a custom AMI.
 
-The User Data script text file, plus a screenshot confirming the second instance (launched from your custom AMI) is serving the page.
+## 1. User Data Script
+```bash
+paste your script here
+```
+Full file: [user-data.sh](user-data.sh)
+
+## 2. Site Live Without SSH
+![First instance](images/first-instance.png)
+
+## 3. Elastic IP
+Elastic IP stayed the same after stop and start. Explain why in your own words.
+
+## 4. Custom AMI
+Created `web-server-baseline-v1` from the first instance.
+
+## 5. Second Instance from AMI
+![Second instance](images/second-instance.png)
+
+## 6. Clean Up
+Released the Elastic IP and terminated both instances.
+
+## What I Learned
+User Data vs AMI: when to use each, and why Elastic IPs cost money when idle.

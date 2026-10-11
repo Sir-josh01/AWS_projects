@@ -52,4 +52,5 @@ Pool Efficiency: Holding onto public IPs for stopped instances would waste addre
 Instance terminated to avoid charges.
 
 ## What I Learned
--
+-Dynamic and Static IP(Elastic)
+- It is the wise use of resources whereby an IP address can used by varrious customers by not simultaneously. it is mainly distributed to the current, present active user, while a new one is given out to others.
