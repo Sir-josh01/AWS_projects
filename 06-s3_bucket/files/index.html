@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EGENE JOSHUA | Cloud Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #232f3e, #37475a);
+      min-height: 100vh;
+    }
+    header { text-align: center; padding: 60px 20px 30px; }
+    .avatar { font-size: 70px; animation: float 3s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    h1 { margin: 10px 0 5px; font-size: 36px; }
+    .name { color: #ff9900; }
+    .tagline { color: #cbd5e1; font-size: 18px; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 14px;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin-top: 0; color: #ff9900; }
+    .section-title { text-align: center; margin: 40px 0 15px; }
+    .skills { text-align: center; }
+    .skill {
+      display: inline-block;
+      background: #ff9900;
+      color: #111;
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 14px;
+    }
+    .buttons { text-align: center; margin: 40px 0; }
+    .btn {
+      display: inline-block;
+      background: #06d6a0;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 26px;
+      border-radius: 10px;
+      margin: 6px;
+    }
+    .btn:hover { background: #05b384; }
+    footer { text-align: center; color: #94a3b8; padding: 30px 20px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="avatar">&#9729;&#65039;</div>
+    <h1>Hi, I'm <span class="name">EGENE JOSHUA</span></h1>
+    <p class="tagline">Cloud Computing Student | Building on AWS</p>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">My Cloud Journey So Far</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>&#128274; IAM &amp; Security</h3>
+        <p>Set up MFA, users, groups and least-privilege policies.</p>
+      </div>
+      <div class="card">
+        <h3>&#128187; EC2 Servers</h3>
+        <p>Launched web servers, Elastic IPs and custom AMIs.</p>
+      </div>
+      <div class="card">
+        <h3>&#128230; S3 Storage</h3>
+        <p>Hosting this very website straight from an S3 bucket!</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Skills I'm Learning</h2>
+    <div class="skills">
+      <span class="skill">AWS</span>
+      <span class="skill">Linux</span>
+      <span class="skill">Networking</span>
+      <span class="skill">Git &amp; GitHub</span>
+      <span class="skill">Markdown</span>
+    </div>
+
+    <div class="buttons">
+      <a class="btn" href="./Cloud Engineering Slide.pptx">Course outline</a>
+      <a class="btn" href="https://github.com/Sir-josh01/AWS_projectshttps://github.com/Sir-josh01/AWS_projects">My GitHub</a>
+    </div>
+  </div>
+
+  <footer>Hosted on Amazon S3 &#127881; | Cloud Computing Course</footer>
+</body>
+</html>
